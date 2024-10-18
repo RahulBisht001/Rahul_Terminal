@@ -7,19 +7,22 @@ import {GoTriangleRight} from "react-icons/go";
 import {FaFolderOpen} from "react-icons/fa";
 
 import DirPath from "./DirPath";
-import Bio from "./commands/Bio";
+import About from "./commands/About";
 
 const DirArrow = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
+
+    //todo -> Feature
+    // Add currTime, when the command is executed.
+
     return (
         <>
             <div className="mt-2 mb-2 text-black">
                 {/* Directory path arrow */}
                 <div className="flex items-center">
                     <div className="w-5 h-1 bg-blue-500"></div>
-                    <div className="flex gap-[2px] text-sm h-7 items-center bg-green-500 pl-2   justify-center pr-2">
+                    <div className="flex gap-[2px] text-base h-7 items-center bg-green-500 pl-2   justify-center pr-2">
                         <IoGitBranch size={20} />
-
                         <h1>Rahul Bisht </h1>
                     </div>
                     <div
@@ -30,9 +33,9 @@ const DirArrow = () => {
                     ></div>
                     <div className="flex items-center">
                         <div className=" bg-blue-500 -translate-x-5">
-                            <div className="flex gap-[2px] h-7 text-sm items-center justify-center pl-8 pr-2">
+                            <div className="flex gap-[2px] h-7 text-base items-center justify-center pl-8 pr-2">
                                 <FaFolderOpen size={18} />
-                                <h1> /portfolio</h1>
+                                <h1> /Portfolio</h1>
                             </div>
                         </div>
                         <div
@@ -51,7 +54,6 @@ const DirArrow = () => {
                         </>
                     )}
                 </div>
-
                 {/* Down Arrow */}
                 <div className="flex items-center">
                     <div className="h-10 w-1 bg-blue-500 -translate-y-3"></div>
@@ -63,16 +65,19 @@ const DirArrow = () => {
                     </div>
 
                     {/* input command */}
-                    <form className="w-full flex items-center">
+                    <form className="w-full flex items-center justify-center">
                         <input
                             className="translate-y-2 -translate-x-3 bg-inherit w-full focus:outline-none placeholder:text-gray-500 tracking-widest text-white"
                             autoFocus
                             placeholder="try ls , bio , skill , contact, about . . ."
                         />
+
+                        <h1 className="text-[#dedede] translate-y-2 -translate-x-3 bg-inherit tracking-wider ">
+                            Executed{/* {currTime} */}
+                        </h1>
                     </form>
                 </div>
-
-                <Bio />
+                {open && <About />}
             </div>
         </>
     );

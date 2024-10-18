@@ -3,30 +3,32 @@
 @tailwind utilities;
 
 body {
-    background: #000;
-    color: #fff;
+	background: #000;
+	color: #edf2f4;
 }
 
 @layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
 
 /* CSS for custom scrollbar */
 ::-webkit-scrollbar {
-    width: 3px; /* width of the scrollbar */
+	width: 3px; /* width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* color of the scrollbar track */
+	background: #f1f1f1;
+	/* color of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #f1f1f1; /* color of the scrollbar thumb */
-    /* roundness of the scrollbar thumb */
+	background: #f1f1f1; /* color of the scrollbar thumb */
+	/* roundness of the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #f1f1f1; /* color of the scrollbar thumb on hover */
+	/* background: #f1f1f1; */
+	/* color of the scrollbar thumb on hover */
 }
