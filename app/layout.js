@@ -1,10 +1,10 @@
-import {Josefin_Sans, Lexend, Overpass} from "next/font/google";
+import {Josefin_Sans, Afacad} from "next/font/google";
 import "./globals.css";
 
-const lexend = Lexend({
+const afacad = Afacad({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
-    variable: "--font-Lexend",
+    variable: "--font-Afacad",
 });
 
 const josefin = Josefin_Sans({
@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en">
-            <body className={`${lexend.variable} ${josefin.variable}`}>{children}</body>
+            <body className={`${afacad.variable} ${josefin.variable}`}>{children}</body>
         </html>
     );
 }
