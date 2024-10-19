@@ -8,9 +8,11 @@ import {GoTriangleRight} from "react-icons/go";
 
 import DirPath from "./DirPath";
 import About from "./commands/About";
+import Skills from "./commands/Skills";
 
 const DirArrow = () => {
     const [open, setOpen] = useState(false);
+    const [dirName, setDirName] = useState("skills");
 
     //todo -> Feature
     // Add currTime, when the command is executed.
@@ -35,7 +37,7 @@ const DirArrow = () => {
                         <div className=" bg-blue-500 -translate-x-5">
                             <div className="flex gap-[2px] h-7 text-base items-center justify-center pl-8 pr-2">
                                 <FaUserGraduate size={16} />
-                                <h1> /Portfolio</h1>
+                                <h1> /portfolio</h1>
                             </div>
                         </div>
                         <div
@@ -50,7 +52,7 @@ const DirArrow = () => {
                     {/* Directory path */}
                     {open && (
                         <>
-                            <DirPath />
+                            <DirPath dirName={dirName} />
                         </>
                     )}
                 </div>
@@ -77,7 +79,8 @@ const DirArrow = () => {
                         </h1>
                     </form>
                 </div>
-                {open && <About />}
+                {/* {open && <About />} */}
+                {/* {open && <Skills />} */}
             </div>
         </>
     );
