@@ -2,9 +2,9 @@
 
 import React, {useState} from "react";
 
-import {IoGitBranch} from "react-icons/io5";
+import {RiGitBranchFill} from "react-icons/ri";
+import {FaUserGraduate} from "react-icons/fa6";
 import {GoTriangleRight} from "react-icons/go";
-import {FaFolderOpen} from "react-icons/fa";
 
 import DirPath from "./DirPath";
 import About from "./commands/About";
@@ -22,7 +22,7 @@ const DirArrow = () => {
                 <div className="flex items-center">
                     <div className="w-5 h-1 bg-blue-500"></div>
                     <div className="flex gap-[2px] text-base h-7 items-center bg-green-500 pl-2   justify-center pr-2">
-                        <IoGitBranch size={20} />
+                        <RiGitBranchFill size={20} />
                         <h1>Rahul Bisht </h1>
                     </div>
                     <div
@@ -34,7 +34,7 @@ const DirArrow = () => {
                     <div className="flex items-center">
                         <div className=" bg-blue-500 -translate-x-5">
                             <div className="flex gap-[2px] h-7 text-base items-center justify-center pl-8 pr-2">
-                                <FaFolderOpen size={18} />
+                                <FaUserGraduate size={16} />
                                 <h1> /Portfolio</h1>
                             </div>
                         </div>
