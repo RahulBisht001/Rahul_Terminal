@@ -24,7 +24,7 @@ export default function RootLayout({children}) {
             <script
                 defer
                 data-domain="terminalbyrahul.vercel.app"
-                src="https://localhost:3000/tracking-script.js"
+                src="http://localhost:3000/tracking-script.js"
             ></script>
             // this is the analytiX tracking script for your app.
             <body className={`${afacad.variable} ${josefin.variable}`}>{children}</body>
